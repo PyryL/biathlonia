@@ -1,0 +1,91 @@
+/*
+    BIATHLONIA
+    Pyry Lahtinen
+    18.10.2019
+*/
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: crosshair;
+}
+
+#header {
+    height: 90px;
+    margin-left: 150px;
+}
+
+#field {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 1px solid black;
+    cursor: crosshair;
+}
+#field:active {
+    cursor: none;
+}
+
+#magazine {
+    position: absolute;
+    top: 100px;
+    left: 1050px;
+}
+
+#wind {
+    position: absolute;
+    top: 500px;
+    left: 1050px;
+    border: 1px solid black;
+}
+
+#guideBox {
+    position: absolute;
+    width: 300px;
+    max-height: 90%;
+    padding-bottom: 20px;
+    top: 2%;
+    right: 2%;
+    border: 1px solid black;
+}
+#guideBox h3 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#guideBox td {
+    padding-left: 15px;
+}
+
+#settingsBox {
+    position: absolute;
+    width: 300px;
+    max-height: 90%;
+    padding-bottom: 20px;
+    top: 2%;
+    right: calc(2% + 320px);
+    border: 1px solid black;
+}
+#settingsBox h3 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#settingsBox td {
+    padding-left: 15px;
+}
+#settingsBox input {
+    width: 50px;
+}
+
+#author {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 35px;
+}
+#version {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 35px;
+}

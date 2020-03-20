@@ -1,0 +1,70 @@
+<html>
+    <!--
+        BIATHLONIA
+        Pyry Lahtinen
+        18.10.2019
+    -->
+
+    <head>
+        <title>Biathlonia</title>
+        <link rel="icon" type="image/jpg" href="./logo-small.jpg">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <script src="./load.js"></script>
+    </head>
+    <body onload="requirements()">
+        <img src="./logo-big.jpg" id="header" alt="Biathlonia">
+
+        <canvas id="field" width="900" height="500">
+            Your browser does not support this application.
+        </canvas>
+        <canvas id="magazine" width="110" height="330"></canvas>
+        <canvas id="wind" width="100" height="100"></canvas>
+
+        <noscript>
+            You have to enable Javascript to play.
+        </noscript>
+
+        <div id="settingsBox">
+            <h3>Settings</h3>
+
+            <table>
+                <tr>
+                    <td><label for="fps">FPS:</label></td>
+                    <td><input type="number" id="fps" value="60" onchange="fpsChange()"></td>
+                </tr>
+                <tr>
+                    <td><label for="targetRadius">Target radius:</label></td>
+                    <td><input type="number" id="targetRadius" value="4" onchange="targetRadiusChange()"></td>
+                </tr>
+                <tr>
+                    <td><label for="wind">Wind:</label></td>
+                    <td>
+                        <select id="windSetting" onchange="windChange()">
+                            <option value="0">Calm</option>
+                            <option value="1" selected>Normal</option>
+                            <option value="2">Storm</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+
+        <div id="guideBox">
+            <h3>Guide</h3>
+            <table>
+                <tr><td>M</td><td>Load</td></tr>
+                <tr><td>Mouse btn</td><td>Hold breath</td></tr>
+                <tr><td>Space</td><td>Shoot</td></tr>
+                <tr><td>N</td><td>Reload magazine</td></tr>
+                <tr><td>B</td><td>Manual bullet</td></tr>
+                <tr><td>Z</td><td>Reset targets</td></tr>
+                <tr><td>T / Y</td><td>Adjust crosshair</td></tr>
+            </table>
+        </div>
+
+        <span id="author">Pyry Lahtinen</span>
+        <span id="version">v 1.0</span>
+        
+        <script src="./main.js"></script>
+    </body>
+</html>
