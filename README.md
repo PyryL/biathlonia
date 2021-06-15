@@ -2,7 +2,7 @@
 
 **Biathlonia** is a biathlon shooting game that runs on your favourite browser.  
 
-You can also play it online at [my website](https://pyry.epizy.com/biathlonia/).    
+You can also play it online at [my website](https://pyry.info/biathlonia/).    
 
 ### Installation ###
 1. Download and unzip the ZIP file
